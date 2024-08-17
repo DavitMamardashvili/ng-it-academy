@@ -1,0 +1,142 @@
+.cards-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .card {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    margin: 10px 0;
+    perspective: 1200px;
+    transition: all 2.3s ease;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .card:hover .cover {
+    transform: rotateX(0deg) rotateY(-180deg);
+  }
+  
+  .cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all 2.3s ease;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .cover:before {
+    content: '';
+    position: absolute;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    transition: all 2.3s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .cover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .cover h1 {
+    font-weight: 600;
+    color: white; /* Primary color for the title text */
+    font-size: 1.3em;
+    border-bottom: 2px solid white;
+    margin: 0px;
+  }
+  
+  .cover .text-area {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    width: 80%;
+    z-index: 3;
+    height: 130px;
+  }
+  
+  .cover .text-area p {
+    font-weight: 600;
+    color: white !important;
+    transform-style: preserve-3d;
+    font-size: 1em;
+  }
+  
+  .card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #e3f2fd;
+    transform-style: preserve-3d;
+    transition: all 3s ease;
+    transform: translateZ(-1px);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .card-back a {
+    transform-style: preserve-3d;
+    transition: transform 2.3s ease, background 0.5s ease;
+    transform: translateZ(-1px) rotateY(-180deg);
+    background: transparent;
+    border: 1px solid #e3e4ea; /* Primary color for the button border */
+    font-weight: 200;
+    font-size: 1.5em; /* Increased font size for button text */
+    color: #e3e4ec; /* Primary color for the button text */
+    padding: 20px 40px; /* Increased padding for button */
+    outline: none;
+    text-decoration: none;
+  }
+  
+  .card-back a:hover {
+    background-color: #3f51b5; /* Primary color for the button background on hover */
+    color: #ffffff; /* White text color on hover */
+  }
+  
+  .lectureName {
+    transform: translateZ(-1px) rotateY(-180deg);
+    width: 100%;
+    height: 20px;
+    padding: 0px 14px;
+    font-size: 1.1em;
+  }
+  .lectureName p{
+    color: white;
+  }
+  
+  /* Responsive styling */
+  @media screen and (max-width: 768px) {
+    .cards-area {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      max-width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+  

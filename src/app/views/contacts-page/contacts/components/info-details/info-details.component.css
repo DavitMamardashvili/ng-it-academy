@@ -1,0 +1,91 @@
+/* Styles for the info details container */
+.info-details {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Prominent shadow for emphasis */
+    width: 100%;
+}
+
+/* Styles for the headers */
+.info-details h2,
+.location-title {
+    font-size: 1.8rem;
+    color: #3f51b5;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the description text */
+.info-details p {
+    font-size: 1.2rem;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/* Styles for the contact list */
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-list li:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Styles for the contact icons */
+.contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Styles for the links and address */
+.contact-list a,
+.contact-list address {
+    font-size: 1.2rem;
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.contact-list a:hover,
+.contact-list address:hover {
+    color: #3f51b5;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the map section */
+.map-section {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    border: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.map-section:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}

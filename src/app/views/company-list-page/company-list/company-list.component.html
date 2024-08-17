@@ -1,0 +1,13 @@
+<section>
+  <aside class="top">
+    <h2 class="section-title">მეგობარი კომპანიები</h2>
+    <hr />
+  </aside>
+  <aside class="bot">
+    <div *ngFor="let item of logoArray; let i = index" class="logo-item">
+      <div class="logo-circle">
+        <h2>Logo {{i +1}}</h2>
+      </div>
+    </div>
+  </aside>
+</section>

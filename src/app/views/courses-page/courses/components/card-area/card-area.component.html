@@ -1,0 +1,26 @@
+<article class="cards-area">
+    <div class="card" *ngFor="let course of courses">
+      <div class="cover"
+      [ngStyle]="{
+        'background-image': 'url(' + course.image + ')',
+        'background-size': 'cover',
+        'background-position': 'center'
+      }">
+        <div class="text-area">
+          <h1>{{ course.name }}</h1>
+          <p>{{ course.description }}</p>
+        </div>
+        <div class="card-back"  [ngStyle]="{
+          'background-image': 'url(https://watermark.lovepik.com/photo/20211121/large/lovepik-teachers-lecture-picture_500608061.jpg)',
+          'background-size': 'cover',
+          'background-position': 'center'
+        }">
+            <div class="lectureName">
+              <p >ლექტორი : {{ course.lectureName}}</p>
+            </div>
+            <a href="#" >დეტალურად</a>
+        </div>
+      </div>
+    </div>
+  </article>
+  

@@ -1,0 +1,29 @@
+<!-- form-container.component.html -->
+<article class="form-container">
+    <h2>მოგვწერე წერილი</h2>
+    <form class="contact-form">
+      <mat-form-field appearance="fill" class="example-full-width">
+        <mat-label>სახელი</mat-label>
+        <input matInput placeholder="სახელი" >
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill" class="example-full-width">
+        <mat-label>ფოსტა</mat-label>
+        <input matInput type="email" placeholder="youremail@example.com" required>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill" class="example-full-width">
+        <mat-label>ტელეფონის ნომერი</mat-label>
+        <span matPrefix>+995 &nbsp;</span>
+        <input matInput type="tel" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill" class="example-full-width">
+        <mat-label>წერილი</mat-label>
+        <textarea matInput rows="4" placeholder="დაწერეთ თქვენი წერილი" required></textarea>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" class="submit-btn" type="submit">გაგზავნა</button>
+    </form>
+  </article>
+  
